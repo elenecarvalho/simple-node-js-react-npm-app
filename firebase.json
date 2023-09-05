@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "idsite",
+    "site": "briefcicdcarvalhoelene",
     "public": "build",
     "ignore": [
       "firebase.json",

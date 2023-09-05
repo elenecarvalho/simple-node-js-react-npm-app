@@ -28,13 +28,8 @@ pipeline {
     stage('deploy') {
       steps {
         sh '''yarn global add firebase-tools
-
-
-
-
-'''
-        sh 'export PATH="$(yarn global bin):$PATH"'
-        sh 'firebase deploy --only hosting:briefcicdcarvalhoelene --project docker-2cdd0 --token $FIREBASE_TOKEN'
+export PATH="$(yarn global bin):$PATH"
+firebase deploy --only hosting:briefcicdcarvalhoelene --project docker-2cdd0 --token $FIREBASE_TOKEN'''
       }
     }
 

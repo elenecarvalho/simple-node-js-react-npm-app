@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      steps {
+        sh 'yarn global add firebase-tools'
+      }
+    }
+
   }
 }
